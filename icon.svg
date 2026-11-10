@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="40" fill="#10243e"/><rect x="32" y="57" width="128" height="92" rx="16" fill="#2f80bd"/><path d="M38 60V48a14 14 0 0 1 14-14h92" fill="none" stroke="#d7e8f5" stroke-width="10"/><rect x="105" y="91" width="62" height="35" rx="10" fill="#d7e8f5"/><circle cx="125" cy="108" r="7" fill="#10243e"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Banconota euro verde">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#188b58"/>
+      <stop offset="1" stop-color="#075c3b"/>
+    </linearGradient>
+    <linearGradient id="note" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#c4f5c9"/>
+      <stop offset="1" stop-color="#7bd6a1"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <rect x="52" y="125" width="408" height="262" rx="29" fill="#064a32" opacity=".35"/>
+  <rect x="42" y="113" width="428" height="262" rx="28" fill="url(#note)" stroke="#e6ffe8" stroke-width="9"/>
+  <rect x="64" y="135" width="384" height="218" rx="17" fill="none" stroke="#21885d" stroke-width="5" stroke-dasharray="13 9"/>
+  <path d="M100 164h53M100 182h32M359 306h53M381 288h31" stroke="#329b6d" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="256" cy="244" r="92" fill="#e8ffdf" stroke="#278a5d" stroke-width="9"/>
+  <circle cx="256" cy="244" r="76" fill="none" stroke="#a5d8aa" stroke-width="3"/>
+  <text x="256" y="292" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="bold" font-size="142" fill="#14794c">€</text>
+  <circle cx="112" cy="244" r="19" fill="#389d70"/>
+  <circle cx="400" cy="244" r="19" fill="#389d70"/>
+</svg>
