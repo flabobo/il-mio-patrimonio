@@ -3,7 +3,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 // MODIFICA QUI I NOMI DEI TUOI FONDI. Ogni nome deve essere unico e stabile.
 // Puoi aggiungerne altri, separati da virgola. Non rinominare fondi con dati già salvati
 // senza prima migrare i relativi record, altrimenti lo storico non sarà più visibile.
-const FONDI = ['fondo da inserire'];
+const FONDI = [Sicav];
 
 const $ = id => document.getElementById(id);
 const cfg = window.APP_CONFIG || {};
