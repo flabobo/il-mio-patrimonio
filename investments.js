@@ -4,8 +4,8 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 // Puoi aggiungerne altri, separati da virgola. Non rinominare fondi con dati già salvati
 // senza prima migrare i relativi record, altrimenti lo storico non sarà più visibile.
 const FONDI = [
-  'Fondo A',
-  'Fondo B',
+  Sicav,
+  ETF,
   'Fondo C'
 ];
 
