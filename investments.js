@@ -5,9 +5,11 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 // senza prima migrare i relativi record, altrimenti lo storico non sarà più visibile.
 
 const FONDI = [
-  'Sicav',
-  'ETF',
-  'Fondo C'
+  'Sicav Target 2028',
+  'Sicav Pictet',
+  'Sicav Science',
+  'ETP',
+  'Leonardo'
 ];
 
 
