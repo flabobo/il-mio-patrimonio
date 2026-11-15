@@ -72,11 +72,24 @@ function drawChart() {
   ctx.fillStyle='#137c54';values.forEach((v,i)=>{ctx.beginPath();ctx.arc(x(i),y(v),4,0,Math.PI*2);ctx.fill();});
   ctx.fillStyle='#65758a';ctx.textAlign='center';const step=Math.max(1,Math.ceil(snapshots.length/5));snapshots.forEach((s,i)=>{if(i%step===0||i===snapshots.length-1)ctx.fillText(s.month.slice(2),x(i),height-12);});
 }
+
 async function init() {
-  if(!cfg.supabaseUrl?.startsWith('https://') || !cfg.supabaseAnonKey)return;
-  client=createClient(cfg.supabaseUrl,cfg.supabaseAnonKey);
-  const select=$('fundSelect');
-  for(const name of FONDI){const option=document.createElement('option');option.value=name;option.textContent=name;select.append(option);}
+  const select = $('fundSelect');
+
+  for (const name of FONDI) {
+    const option = document.createElement('option');
+    option.value = name;
+    option.textContent = name;
+    select.append(option);
+  }
+
+  if (!cfg.supabaseUrl?.startsWith('https://') || !cfg.supabaseAnonKey) {
+    message('Configurazione Supabase mancante.', true);
+    return;
+  }
+
+  client = createClient(cfg.supabaseUrl, cfg.supabaseAnonKey);
+
   select.onchange=()=>{ $('investmentForm').reset();$('investmentMonth').value=monthNow();refresh(); };
   $('investmentMonth').value=monthNow();
   $('investmentForm').onsubmit=async e=>{
